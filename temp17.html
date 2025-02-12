@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    function hello(){
+         let color=document.getElementById("txtclr").value
+         document.getElementById("txtdiv").style.color=color
+         let bg=document.getElementById("type").value;
+         document.getElementById("txtdiv").style.backgroundColor=bg;
+    }
+</script>
 <body>
-    
+    <input type="text" id="txtclr" placeholder="enter colour">
+    <button onclick="hello()">Submit</button>
+    <div id="txtdiv">Hello World</div>
+    <p><select id="type">
+        <option value=0>--Select--</option>
+        <option value="red">Red</option>
+        <option value="pink">Pink</option>
+        <option value="blue">Blue</option>
+        <option value="aqua">Aqua</option>
+        </select></p>
+</div>
 </body>
 </html>
