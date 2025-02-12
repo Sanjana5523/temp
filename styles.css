@@ -1,0 +1,16 @@
+
+        /* {  element */h2{
+            background-color: blanchedalmond;
+            color: rgb(100, 237, 136);
+        }
+        /* class */
+        .c{             
+            background-color: rgb(172, 216, 202);
+            color: rgb(101, 44, 8);
+        }
+        /* id */
+        #h{
+            background-color: rgb(224, 224, 49);
+            color: rgb(103, 228, 103);
+        }
+    

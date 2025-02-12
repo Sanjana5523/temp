@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function hello(){
+          
+        //    let sub=number1-number2
+        //    let mul=number1*number2
+           let n1= parseInt(document.getElementById('num1').value)
+           let n2= parseInt(document.getElementById('num1').value)
+           let str=`addition=${n1+n2}<br>subtraction=${n1-n2}<br>multiplication=${n1*n2}<br>
+           division=${n1/n2}`
+           root.innerHTML=str
+        //    document.write(str)
+        }
+       
+    </script>
+</head>
+<body>
+    
+    <input type="number" id="num1" placeholder="Enter a number 1">
+    <input type="number" id="num2" placeholder="Enter a number 2">
+    <button onclick="hello()">submit</button>
+    <div id="root"></div>
+</body>
+</html>
