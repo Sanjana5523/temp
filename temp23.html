@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Game Points:</h2>
+    <img src="./burger.jpg" width="100px" id="ball"/>
+    <img src="./basket.jpg" width="150px" id="basket" />
+    <script>
+        ball.style.position="absolute";
+        let t=0;
+        let l=0;
+        function fall(){
+            t++;
+            if(t==400) {
+                t=0;
+                l=Math.random()*500;
+            }
+            ball.style.top=t+"px";
+            ball.style.left=l+"px";
+            setTimeout(fall,10);
+            
+        }
+        fall()
+        basket.style.position = "absolute";
+      let b = document.body;
+      let down = 400;
+      let left=0;
+      basket.style.top = down + "px";
+      basket.style.left = left + "px";
+      b.onkeydown = (e) => {
+        console.log(e.key)
+        if(e.key=="ArrowRight") left+=5; 
+        if(e.key=="ArrowLeft") left-=5;
+      
+            basket.style.top = down + "px";
+            basket.style.left = left + "px";
+           
+        };
+    </script>
+    
+</body>
+</html>
