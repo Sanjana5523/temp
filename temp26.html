@@ -13,7 +13,7 @@
         .then((data)=>{
             let str="";
             data.map(value=>{
-                str+=`<li>${value.name}</li>`
+                str+=`<li>${value.name}-${value.email}</li>`
             })
             root.innerHTML=str
             // console.log(data);
